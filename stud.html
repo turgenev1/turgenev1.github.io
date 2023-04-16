@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-maker</title>
+    <link rel="icon" href="icons/favicon/favicon-32x32.png" type="x-icon">
+    <!-- <link rel="stylesheet" href="css/font.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <div class="all">
+        <!-- HTML шапки сайта -->
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="icons/logo_web_4.png" alt="Лого" class="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li class="main"><a class="link" href="index.html">Главная</a></li>
+                    <li class="stud"><a class="link_active" href="stud.html">Студенты</a></li>
+                    <li class="about"><a class="link" href="about.html">О курсе</a></li>
+                    <li class="contact"><a class="link" href="contact.html">Контакты</a></li>
+                    <li class="menu_item"><a class="link" href="me.html">О себе</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <a class="btn" href="#login">Войти</a> <!-- Start Popup -->
+            <!-- <button class="enter_btn">Войти</button> -->
+        </header>
+        <!-- HTML модального окна -->
+        <form id="login" class="popup">
+            <h3 class="popup_title">Войти на сайт</h3>
+            <input type="text" placeholder="Логин"/>
+            <input type="password" placeholder="Пароль"/>
+            <a class="btn_modal" href="#">Войти</a>
+            <a href="#" title="Close" class="close_btn">&times;</a>
+        </form>
+        <!-- HTML тела сайта -->
+            <main class="students">
+                <h2 class="title">Студенты потока 08.02.2020 👧👦</h2>
+                <div class="all_students">
+                    <div class="student">
+                        <img width="200" height="270" src="img/student_1.jpg" alt="студент 1">
+                        <p class="student__name">Василий Иванов</p>
+                    </div>
+                    <div class="student">
+                        <img width="200" height="270" src="img/student_2.jpg" alt="студент 2">
+                        <p class="student__name">Мария Александрова</p>
+                        <!-- <p class="student__new">новичок</p> -->
+                    </div>
+                    <div class="student">
+                        <img width="200" height="270" src="img/student_3.jpg" alt="студент 3">
+                        <p class="student__name">Мария Александрова</p>
+                    </div>
+                    <div class="student">
+                        <a href="me.html">
+                            <img width="200" height="270" src="img/student_me.jpg" alt="студент 4"></a>
+                        <p class="student__name new">Иван Николенко</p>
+                    </div>
+                    <div class="student">
+                        <img width="200" height="270" src="img/student_5.jpg" alt="студент 5">
+                        <p class="student__name">Василий Иванов</p>
+                    </div>
+                </div>
+            </main>
+    </div>
+    <!-- HTML подвала сайта -->
+    <footer>
+        <div class="info">
+            2023 &copy <a href="#" class="underlined">учебный центр</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

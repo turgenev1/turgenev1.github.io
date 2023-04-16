@@ -1,0 +1,315 @@
+html, body
+	font-family: 'Roboto', sans-serif
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+
+img, iframe
+	max-width: 100%
+	text-decoration: none
+
+.all
+	flex-grow: 1
+
+.header
+	position: relative
+	background: #213b7e
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	font-size: 20px
+	font-weight: 400
+	line-height: 21px
+	padding-left: calc(50% - 1300px / 2)
+	padding-right: calc(50% - 1300px / 2)
+
+.hamburger
+	display: none
+
+.logo
+	width: 50px
+	margin-left: 15px
+
+.menu
+	display: flex
+	list-style-type: none
+	margin-left: 54px
+
+.link
+	color: #FFFFFF
+	font-style: normal
+	text-decoration-line: underline
+	display: block
+	padding: 30px 18px
+
+	&_active
+		color: #213B7E
+		background: white
+		padding: 30px 18px
+		text-decoration: none
+		display: block
+
+.btn
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 15px 51px
+	background: #EA5D21
+	color: #FFFFFF
+	font-size: 18px
+	font-weight: 400
+	line-height: 21px
+	cursor: pointer
+	text-decoration: none
+	margin-right: 15px
+	transition: .3s all
+	+btn_hover
+
+/* Альтернативная кнопка
+.enter_btn
+	display: block
+	float: right
+	margin-right: 15px
+	width: 153px
+	height: 50px
+	border: 4px solid rgba(0, 0, 0, 0.23)
+	background: #EA5D21
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18)
+	color: #FFFFFF
+	font-size: 18px
+	font-weight: 400
+	line-height: 21px
+	cursor: pointer
+
+/* =CSS for Popup begin=
+.btn_modal
+	display: block
+	max-width: 153px
+	height: 50px
+	text-align: center
+	background: #EA5D21
+	color: #FFFFFF
+	font-size: 18px
+	font-weight: 400
+	line-height: 21px
+	cursor: pointer
+	padding: 15px 51px
+	margin: 56px auto 0
+	text-decoration: none
+	+btn_hover
+
+.popup
+	display: block
+	margin: 0 auto
+	max-width: 500px
+	background: #FFFFFF
+	border: 1px solid #213B7E
+	filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25))
+	padding: 26px 28px 56px
+	position: absolute
+	top: 160px
+	left: 0
+	right: 0
+	opacity: 0
+	pointer-events: none
+	transition: 0.5s all linear
+	z-index: 10
+
+	&.active
+		opacity: 1
+		pointer-events: all
+
+.close_btn
+	position: absolute
+	top: 10px
+	right: 10px
+	width: 15px
+	height: 15px
+	background: #888
+	color: #eee
+	text-align: center
+	line-height: 15px
+	border-radius: 15px
+	cursor: pointer
+
+.popup_title
+	text-align: center
+	color: #000000
+	font-size: 24px
+
+.popup input
+	&:focus
+		border: 1px solid #EA5D21
+	&[type="text"], &[type="password"]
+		width: 100%
+		height: 55px
+		border: 1px solid #808080
+		font-weight: 400
+		font-size: 24px
+		line-height: 28px
+		text-indent: 14px
+
+	&[type="text"]
+		margin-top: 36px
+
+	&[type="password"]
+		margin-top: 56px
+/* =CSS for Popup end=
+
+.wellcome
+	padding-left: calc(50% - 911px / 2)
+	padding-right: calc(50% - 911px / 2)
+
+.title
+	font-weight: 700
+	font-size: 30px
+	line-height: 35px
+	color: #000000
+	margin-top: 33px
+
+.content_img
+	padding: 25px 0 15px 0
+
+.container
+	display: flex
+	justify-content: space-between
+
+.section
+	width: 634px
+
+h3
+	font-weight: 400
+	font-size: 25px
+	line-height: 29px
+	color: #000000
+
+.content_text
+	font-weight: 400
+	font-size: 18px
+	line-height: 21px
+	color: #000000
+	margin: 10px 0 15px 0
+
+.bold
+	font-weight: 700
+
+.red
+	font-style: italic
+	color: #CF5510
+
+.slog
+	position: relative
+	width: 129px
+	font-weight: 400
+	font-size: 36px
+	line-height: 45px
+	color: #646464
+	font-family: Lobster
+	margin: 29px 0 0
+
+.mark_left
+	font-size: 64px
+	position: absolute
+	left: -33px
+	top: 9px
+
+.mark_right
+	font-size: 64px
+	position: absolute
+	right: -22px
+	top: 56px
+
+.info
+	background: #213B7E
+	padding: 18px 0 19px 0
+	margin: 0 auto
+	text-align: center
+	font-weight: 400
+	font-size: 20px
+	line-height: 23px
+	text-align: center
+	color: rgba(255, 255, 255, 0.5)
+
+footer a
+	font-weight: 400
+	font-size: 20px
+	line-height: 23px
+	color: rgba(255, 255, 255, 0.5)
+
+.students
+	padding-left: calc(50% - 1202px / 2)
+	padding-right: calc(50% - 1202px / 2)
+
+.all_students
+	margin-top: 24px
+	display: flex
+	flex-wrap: wrap
+	gap: 50px
+
+.student
+	width: 200px
+	position: relative
+
+.new:after
+	content: 'новичёк'
+	position: absolute
+	top: -12px
+	right: -13px
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 21px
+	color: #FFFFFF
+	background: #3AA828
+	border-radius: 20px
+	padding: 1px 2px 1px 5px
+	text-transform: uppercase
+
+.student__name
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 23px
+	color: #000000
+	text-align: center
+	margin-top: 8px
+
+/* About
+.about
+	padding-left: calc(50% - 820px / 2)
+	padding-right: calc(50% - 820px / 2)
+
+.about_text
+	font-weight: 400
+	font-size: 25px
+	line-height: 29px
+	color: #000000
+	margin-top: 25px
+
+video
+	margin-top: 15px
+	width: 820px
+	height: 549.33px
+
+/* Contact
+.contact
+	padding-left: calc(50% - 1268px / 2)
+	padding-right: calc(50% - 1268px / 2)
+
+	.title
+		position: relative
+		left: 216px
+
+	&_info
+		position: relative
+		left: 216px
+		a
+			font-weight: 400
+			font-size: 18px
+			line-height: 21px
+			color: #000000
+
+iframe
+	margin: 25px 0 15px

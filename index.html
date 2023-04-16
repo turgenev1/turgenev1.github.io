@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-maker</title>
+    <link rel="icon" href="icons/favicon/favicon-32x32.png" type="x-icon">
+    <!-- <link rel="stylesheet" href="css/font.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <div class="all">
+        <!-- HTML шапки сайта -->
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="icons/logo_web_4.png" alt="Лого" class="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu_item"><a class="link_active" href="index.html">Главная</a></li>
+                    <li class="menu_item"><a class="link" href="stud.html">Студенты</a></li>
+                    <li class="menu_item"><a class="link" href="about.html">О курсе</a></li>
+                    <li class="menu_item"><a class="link" href="contact.html">Контакты</a></li>
+                    <li class="menu_item"><a class="link" href="me.html">О себе</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <a class="btn" href="#login">Войти</a> <!-- Start Popup -->
+            <!-- <button class="enter_btn">Войти</button> --> <!-- Альтернативная кнопка -->
+        </header>
+        <!-- HTML модального окна -->
+        <form id="login" class="popup">
+            <h3 class="popup_title">Войти на сайт</h3>
+            <input type="text" placeholder="Логин"/>
+            <input type="password" placeholder="Пароль"/>
+            <a class="btn_modal" href="#">Войти</a>
+            <a href="#" title="Close" class="close_btn">&times;</a>
+        </form>
+        <!-- HTML тела сайта -->
+        <main class="wellcome">
+            <h1 class="title">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+            <img src="img/classroom.jpg" alt="classroom" class="content_img">
+            <div class="container">
+                <div class="section">
+                    <div class="groop">
+                        <h3>Для кого этот курс</h3>
+                        <div class="content_text">Этот курс рассчитан на новичков, которые только начинают знакомство с веб-разработкой. В начале курса вы узнаете о том, как устроен Интернет и веб-сайты. <br>
+                        Для обучения необходимо только владеть компьютерной грамотностью (пользоваться браузером, создавать папки и файлы, устанавливать программы).
+                        </div>
+                    </div>
+                    <div class="groop">
+                        <h3>Чему вы научитесь</h3>
+                        <div class="content_text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с нуля. Изучите основы языков <span class="bold">HTML, CSS</span> и немного <span class="bold">JavaScript</span>. Мы вместе сверстаем сайт нашей группы по этому макету. А затем вы <span class="red">сами</span>  сверстаете свои личные странички в качестве домашнего задания и мы выложим все это на сервер.
+                        </div>           
+                    </div>
+                </div>
+                <h2 class="slog">
+                    <span class="mark_left">“</span>
+                    Учимся вместе!
+                    <span class="mark_right">”</span>
+                </h2>
+            </div>
+        </main>
+    </div>
+    <!-- HTML подвала сайта -->
+    <footer>
+        <div class="info">
+            2023 &copy <a href="#" class="underlined">учебный центр</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

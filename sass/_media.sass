@@ -1,0 +1,137 @@
+@media (max-width: 1024px)
+	.header
+		padding-left: 32px
+		padding-right: 32px
+
+	.menu
+		margin-left: 0
+
+	.link, .link_active
+		font-size: 18px
+		padding: 20px 14px
+
+	.wellcome
+		padding-left: calc(50% - 734px / 2)
+		padding-right: calc(50% - 734px / 2)
+
+	.section
+		width: 70%
+
+	.container
+		align-items: center
+
+	.students
+		padding-left: calc(50% - 734px / 2)
+		padding-right: calc(50% - 734px / 2)
+
+/* Стили для телефона
+@media (max-width: 767px)
+	.header
+		height: 50px
+		padding-left: 16px
+		padding-right: 16px
+
+	.logo
+		display: block
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 35px
+		margin-left: 0		
+
+	/* .menu
+		flex-direction: column
+		align-items: center */
+
+	
+	/* .link, .link_active
+		font-size: 18px
+		padding: 10px 10px */
+	
+	.btn
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		height: 35px
+		
+
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 50px
+		left: -100%
+		width: 100%
+		padding: 20px
+		background-color: rgba(0,0,0,.8)
+		transition: 0.6s all
+		&_active
+			left: 0
+			z-index: 10
+		&_item
+			padding-right: 0
+			border: none
+			margin: 10px
+		/* &_link
+			font-size: 20px
+			text-decoration: none */
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 30px
+		height: 18px
+		span
+			display: block
+			height: 3px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 3px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -3px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+
+	/* .logo
+		display: none */
+
+	.wellcome
+		padding-left: 16px
+		padding-right: 16px
+
+	.container
+		flex-wrap: wrap
+		justify-content: center
+		text-align: center
+
+	.section
+		width: 90%
+
+	.slog
+		margin: 0
+
+	.students
+		padding-left: 16px
+		padding-right: 16px
+
+	.all_students
+		justify-content: center
+
+	.about
+		padding-left: 16px
+		padding-right: 16px
+
+	.contact
+		padding-left: 16px
+		padding-right: 16px
+		.title, &_info
+			left: 0
