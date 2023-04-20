@@ -1,0 +1,142 @@
+@media screen and (max-width: 600px)
+  .page__header
+    position: fixed
+    z-index: 1
+    padding-top: 0
+  .popup-menu__button
+    display: block
+  .menu
+    border: 0
+    clip: rect(0 0 0 0)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+    width: 1px
+
+@media screen and (min-width: 600px)
+  .popup-menu__list
+    visibility: hidden
+
+@media screen and (max-width: 1286px)
+  .intro
+    flex-wrap: nowrap
+
+  .intro__content
+    width: 50%
+    box-sizing: border-box
+    margin-right: 0
+    padding-right: 15px
+
+  .intro__heading
+    font-size: 5vw
+
+  .intro__image-link
+    width: 50%
+
+  .intro__image
+    width: 100%
+    height: auto
+
+  .products
+    justify-content: flex-start
+
+  .product
+    max-width: 100%
+    margin-right: 1vw
+
+  .feedback
+    margin: 0 auto
+    margin-bottom: 30px
+    padding: 0 1vw
+    grid-column: 1 / 6
+    grid-row: 1 / 2
+
+  .feedback__body
+    margin-right: 0
+
+  .feedback-contacts
+    flex-wrap: wrap
+    padding-left: initial
+    padding-right: initial
+    padding-bottom: 0
+    grid-template-columns: 100%
+
+  .feedback__left-box
+    flex: 0 1 auto
+
+  .contacts
+    width: 100%
+    max-width: 100%
+    grid-column: 1 / 6
+    grid-row: 2 / 3
+
+  .contacts-background
+    display: none
+
+  .feedback-contacts::after
+    content: initial
+
+@media screen and (max-width: 907px)
+  .services-lead, .services__blocks
+    width: 100%
+    max-width: 100%
+
+@media screen and (max-width: 900px)
+  .products__item
+    width: 100%
+    text-align: center
+
+  .services
+    justify-content: center
+
+@media screen and (max-width: 855px)
+  .team__members
+    grid-template-columns: 100%
+    grid-template-rows: auto
+
+  .team__selected-photo
+    grid-row: 1 / 2
+    margin-bottom: 18px
+    margin-right: 0
+
+  .team__selected-info
+    grid-column: 1 / 2
+    grid-row: 2 / 3
+
+  .members
+    grid-column: 1 / 2
+    grid-row: 3 / 4
+
+@media screen and (max-width: 800px)
+  .services-lead, .services__blocks
+    width: 100%
+    max-width: 100%
+
+  .contacts
+    padding: 1vw
+
+@media screen and (max-width: 760px)
+  .feedback__name, .feedback__mail, .feedback__message, .feedback__button
+    width: 100%
+
+  .feedback__name
+    margin-right: 0
+
+@media screen and (max-width: 700px)
+  .header
+    padding-left: 20px
+
+  .intro
+    flex-wrap: wrap
+
+  .intro__content, .intro__image-link
+    width: 100%
+
+  .intro__image
+    width: 100%
+    height: auto
+
+  .intro__heading
+    font-size: 50px
